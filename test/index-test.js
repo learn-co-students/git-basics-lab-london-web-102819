@@ -3,7 +3,7 @@ const path = require( 'path' );
 var chai = require( 'chai' );
 chai.use( require( 'chai-fs' ) );
 
-describe( 'this lab', () => {
+//describe( 'this lab', () => {
 
   it( 'has a folder named my-repository', () => {
     chai.assert.isDirectory( './my-repository', 'no folder name "my-repository" was found' );
@@ -19,7 +19,7 @@ describe( 'this lab', () => {
 
 } )
 
-describe( 'the local repository', () => {
+//describe( 'the local repository', () => {
 
   it( 'has README.md as a tracked file', () => {
     chai.assert.pathExists( './my-repository/.git/index', 'no files are being tracked.  Use "git add ." to track all files in this repo' );
